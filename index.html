@@ -12,13 +12,36 @@
 </head>
 
 <body>
-
+    <header class="jumbotron">
+        <div class="container">
+            <h1>Smash Faces</h1>
+            <div class="line"></div>
+            <p>Bienvenida a Smash Face! Tu misión: identificar a tus compañeras de Laboratoria. Tienes 5 intentos para adivinar el nombre de cada una. Si aciertas tienes 5 puntos, si fallas es un punto menos. <br>Suerte!</p>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="">Elige tu sede: </label>
+                    <select class="select">
+                        <option value="sede" hidden>Sede</option>
+                        <option value="peru">Perú</option>
+                        <option value="mexico">México</option>
+                    </select>
+                </div>
+                <div class="score-board">
+                    <label for="puntos">Puntos: </label>
+                    <span id="score">0</span>
+                    <span>puntos</span>
+                </div>
+            </form>
+        </div>
+    </header>
     <div class="root"></div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/utils/get-json.js"></script>
-    <script src="js/components/header.js"></script>
     <script src="js/index.js"></script>
+
 </body>
 
 </html>
